@@ -1,0 +1,684 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+
+  margin: 0;
+
+  padding: 0;
+
+  scroll-behavior: smooth;
+
+}
+
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #020617;
+
+  color: #f8fafc;
+
+  line-height: 1.6;
+
+}
+
+
+img {
+
+  max-width: 100%;
+
+}
+
+
+a {
+
+  text-decoration: none;
+
+}
+
+
+.container {
+
+  width: 100%;
+
+  max-width: 1120px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  padding-left: 24px;
+
+  padding-right: 24px;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+  width: 100%;
+
+  min-height: 720px;
+
+  display: flex;
+
+  align-items: center;
+
+  background:
+
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(34,197,94,.20),
+      transparent 35%
+    ),
+
+    linear-gradient(
+      135deg,
+      #020617,
+      #0f172a
+    );
+
+}
+
+
+.hero-grid {
+
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 70px;
+
+  align-items: center;
+
+}
+
+
+.hero-content {
+
+  min-width: 0;
+
+}
+
+
+.category,
+.section-label {
+
+  color: #22c55e;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+}
+
+
+.hero h1 {
+
+  font-size:
+    clamp(42px, 6vw, 76px);
+
+  line-height: 1.02;
+
+  margin:
+    18px 0;
+
+}
+
+
+.hero-description {
+
+  font-size: 20px;
+
+  color: #cbd5e1;
+
+  max-width: 600px;
+
+}
+
+
+.hero-image {
+
+  width: 100%;
+
+  max-width: 520px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,.45);
+
+}
+
+
+.hero-image img {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  object-fit: cover;
+
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta {
+
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding:
+    16px 28px;
+
+  background: #22c55e;
+
+  color: #020617;
+
+  border-radius: 8px;
+
+  font-weight: 900;
+
+  transition: .2s;
+
+}
+
+
+.cta:hover {
+
+  transform:
+    translateY(-3px);
+
+  background: #4ade80;
+
+}
+
+
+.cta.large {
+
+  padding:
+    18px 36px;
+
+  font-size: 17px;
+
+}
+
+
+.price {
+
+  margin-top: 18px;
+
+  color: #94a3b8;
+
+  font-weight: 700;
+
+}
+
+
+/* =====================================================
+   BENEFÍCIO
+===================================================== */
+
+.benefit-section {
+
+  width: 100%;
+
+  padding:
+    110px 0;
+
+  background: #0f172a;
+
+  text-align: center;
+
+}
+
+
+.benefit-section h2,
+.offer-section h2,
+.video-section h2 {
+
+  font-size:
+    clamp(34px, 5vw, 54px);
+
+  line-height: 1.1;
+
+  max-width: 800px;
+
+  margin:
+    15px auto 25px;
+
+}
+
+
+.section-text {
+
+  max-width: 760px;
+
+  margin:
+    0 auto;
+
+  color: #cbd5e1;
+
+  font-size: 18px;
+
+}
+
+
+.audience {
+
+  max-width: 700px;
+
+  margin:
+    30px auto;
+
+  padding: 20px;
+
+  border:
+    1px solid #334155;
+
+  border-radius: 12px;
+
+  color: #cbd5e1;
+
+}
+
+
+/* =====================================================
+   OFERTA
+===================================================== */
+
+.offer-section {
+
+  width: 100%;
+
+  padding:
+    110px 0;
+
+  background: #020617;
+
+  text-align: center;
+
+}
+
+
+.offer-box {
+
+  width: 100%;
+
+  max-width: 850px;
+
+  margin:
+    40px auto 0;
+
+  padding: 40px;
+
+  border:
+    1px solid #1e293b;
+
+  border-radius: 18px;
+
+  background: #0f172a;
+
+  text-align: center;
+
+}
+
+
+.offer-box p {
+
+  color: #cbd5e1;
+
+  font-size: 18px;
+
+}
+
+
+.offer-price {
+
+  margin:
+    30px 0;
+
+  font-size: 18px;
+
+  color: #94a3b8;
+
+}
+
+
+.offer-price strong {
+
+  font-size: 42px;
+
+  color: white;
+
+}
+
+
+/* =====================================================
+   IMAGENS EXTRAS
+===================================================== */
+
+.media-grid {
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 25px;
+
+  margin:
+    35px auto;
+
+}
+
+
+.media-card {
+
+  width: min(
+    100%,
+    420px
+  );
+
+  margin:
+    0 auto;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+}
+
+
+.media-card img {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+
+}
+
+
+/* =====================================================
+   VÍDEO
+===================================================== */
+
+.video-section {
+
+  width: 100%;
+
+  padding:
+    110px 0;
+
+  background: #0f172a;
+
+  text-align: center;
+
+}
+
+
+.video-section .container {
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+
+.video-section h2 {
+
+  width: 100%;
+
+}
+
+
+.video-wrapper {
+
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+
+  max-width: 900px;
+
+  height: auto;
+
+  aspect-ratio: 16 / 9;
+
+  margin:
+    40px auto 0;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: #000;
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.40);
+
+}
+
+
+.video-wrapper iframe {
+
+  position: absolute;
+
+  display: block;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  min-width: 100%;
+
+  min-height: 100%;
+
+  margin: 0;
+
+  padding: 0;
+
+  border: 0;
+
+}
+
+
+/* =====================================================
+   CTA FINAL
+===================================================== */
+
+.final-cta {
+
+  width: 100%;
+
+  padding:
+    120px 0;
+
+  text-align: center;
+
+  background:
+
+    linear-gradient(
+      135deg,
+      #14532d,
+      #052e16
+    );
+
+}
+
+
+.final-cta h2 {
+
+  font-size:
+    clamp(36px, 5vw, 60px);
+
+  line-height: 1.05;
+
+}
+
+
+.final-cta p {
+
+  max-width: 700px;
+
+  margin:
+    20px auto;
+
+  color: #dcfce7;
+
+  font-size: 18px;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+  width: 100%;
+
+  padding: 30px 0;
+
+  background: #020617;
+
+  color: #64748b;
+
+}
+
+
+footer .container {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .hero {
+
+    min-height: auto;
+
+    padding:
+      80px 0;
+
+  }
+
+
+  .hero-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+  }
+
+
+  .hero-image {
+
+    max-width: 600px;
+
+  }
+
+
+  .hero h1 {
+
+    font-size: 46px;
+
+  }
+
+
+  .video-wrapper {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    border-radius: 10px;
+
+  }
+
+
+  .offer-box {
+
+    padding: 25px;
+
+  }
+
+
+  footer .container {
+
+    flex-direction: column;
+
+    text-align: center;
+
+    align-items: center;
+
+  }
+
+}
+
